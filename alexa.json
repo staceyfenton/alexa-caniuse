@@ -1,0 +1,135 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "caniuse",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "Done"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "caniuse",
+          "slots": [
+            {
+              "name": "feature",
+              "type": "feature"
+            },
+            {
+              "name": "browser",
+              "type": "browser"
+            },
+            {
+              "name": "version",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Can I use {feature} in {browser} {version}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "feature",
+          "values": [
+            {
+              "id": "css-grid",
+              "name": {
+                "value": "css grid",
+                "synonyms": [
+                  "css-grid",
+                  "c s s grid"
+                ]
+              }
+            },
+            {
+              "id": "let",
+              "name": {
+                "value": "let"
+              }
+            },
+            {
+              "id": "flexbox",
+              "name": {
+                "value": "flex box",
+                "synonyms": [
+                  "flexbox"
+                ]
+              }
+            },
+            {
+              "id": "border-radius",
+              "name": {
+                "value": "border radius",
+                "synonyms": [
+                  "border-radius",
+                  "border dash radius"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "browser",
+          "values": [
+            {
+              "id": "ie",
+              "name": {
+                "value": "internet explorer",
+                "synonyms": [
+                  "I E",
+                  "IE"
+                ]
+              }
+            },
+            {
+              "id": "edge",
+              "name": {
+                "value": "edge"
+              }
+            },
+            {
+              "id": "safari",
+              "name": {
+                "value": "safari"
+              }
+            },
+            {
+              "id": "firefox",
+              "name": {
+                "value": "firefox",
+                "synonyms": [
+                  "fire fox"
+                ]
+              }
+            },
+            {
+              "id": "chrome",
+              "name": {
+                "value": "chrome"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
